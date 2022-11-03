@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- <link rel="stylesheet" href="./dist/css/leaflet.css" /> -->
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    /> -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        display: none;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>IP Adress Tracker</h1>
+      <form action="">
+        <div>
+          <input
+            type="text"
+            class="form-control"
+            id="inputIP"
+            placeholder="192.212.174.101"
+          />
+          <button type="submit"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </form>
+      <div class="result">
+        <div>
+          <h3>IP Adress</h3>
+          <strong id="ip-adress-container">192.212.174.101</strong>
+        </div>
+        <div>
+          <h3>Location</h3>
+          <strong id="location-container">Brooklyn, NY 10001</strong>
+        </div>
+        <div>
+          <h3>Timezone</h3>
+          <strong id="timezone-container">UTC-05:00</strong>
+        </div>
+        <div>
+          <h3>ISP</h3>
+          <strong id="isp-container">SpaceX Starlink</strong>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div id="map"></div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <!-- <script src="./dist/js/leaflet.js"></script> -->
+
+    <!-- <script
+     src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+      integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+      crossorigin=""
+    ></script>  -->
+
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDODxTViwLPyHyzI2F0Iv9xLWqxP-oNSng&callback=initMap"
+    ></script>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
+
+<!-- https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_yVh8FQYdpUoxZ50RPyZYNQmct2f4E&ipAddress=8.8.8.8 -->
+
+<!-- AIzaSyDODxTViwLPyHyzI2F0Iv9xLWqxP-oNSng -->
